@@ -82,18 +82,6 @@ void echoMain::update()
 
 	updateDeviceIconTransparency();
 
-	//circlePos.x += core->getInterpolatedAcceleration().x;
-	//circlePos.y += core->getInterpolatedAcceleration().y;
-
-	/*if(bActive) 
-	{
-		circlePos.x += core->getInterpolatedAcceleration().x;
-		circlePos.y += core->getInterpolatedAcceleration().y;
-		//mouse->mouseMove(core->getInterpolatedAcceleration().x,core->getInterpolatedAcceleration().y);
-	}*/
-
-	//mouse->mouseMove(core->getInterpolatedAcceleration().x,core->getInterpolatedAcceleration().y);
-
 	if(!isMouseActive)
 	{
 		mouse->mouseMove(core->getInterpolatedAcceleration().z,core->getInterpolatedAcceleration().y);
@@ -125,8 +113,6 @@ void echoMain::draw(){
 
 
 	userInterface->draw();
-
-	//testDataDraw();
 }
 
 void echoMain::testDataDraw()
@@ -224,16 +210,6 @@ void echoMain::checkEchoButtons()
 }
 
 void echoMain::keyPressed(int key){
-	/*if(key == '1') userInterface->showUI();
-	if(key == '2') userInterface->hideUI();
-	if(key == '3') mailUI->showUI();
-	if(key == '4') mailUI->hideUI();
-	if(key == '5') socialUI->showUI();
-	if(key == '6') socialUI->hideUI();
-	if(key == '7') thanksUI->showUI();
-	if(key == '8') thanksUI->hideUI();
-	if(key == '9') homeUI->showUI();
-	if(key == '0') homeUI->hideUI();*/
 	if(key == '1') enableMouseDevice();
 	if(key == '2') enableEchoDevice();
 }

@@ -74,8 +74,8 @@ ofxCarousel::~ofxCarousel()
 {
 	for(int i = 0; i < images.size(); i++)
 	{ 
-		images[i] = NULL;
 		delete images[i];
+		images[i] = NULL;
 	}
 }
 

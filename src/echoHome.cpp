@@ -18,6 +18,7 @@ echoHomeUI::echoHomeUI()
 echoHomeUI::~echoHomeUI()
 {
 	delete carousel;
+	delete mask;
 }
 
 void echoHomeUI::update()
